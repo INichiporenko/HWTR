@@ -1,18 +1,25 @@
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ведіть аргумент 1");
-        int arg1  = scanner.nextInt();
-        System.out.println("Ведіть аргумент 2");
-        int arg2 = scanner.nextInt();
+        System.out.println("Введіть ваш текст >");
+        String a = scanner.nextLine();
 
-        int result = arg1 + arg2;
+        System.out.println("Введіть слово, яке необхідно видалити>");
+        String b = scanner.nextLine();
 
-        System.out.println(Integer.toBinaryString(arg1) + " + " + Integer.toBinaryString(arg2) + " = " + Integer.toBinaryString(result));
+        int start = a.indexOf(b);
+        String before = a.substring(0, start);
+
+        String after = a.substring(start + b.length());
+
+        String result = before + after;
+        System.out.println(result);
+
+
+
+
 
 
 
