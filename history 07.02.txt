@@ -1,0 +1,14 @@
+   0 cd ..
+   1 mkdir /home/user /home/user/start && touch /home/user/start/1.txt
+   2 echo 'Start' > /home/user/start/1.txt 
+   3 date
+   4 date >> /home/user/start/1.txt
+   5 cat /home/user/start/1.txt
+   6 mkdir /opt/task && touch /opt/task/start.txt
+   7 mv /home/user/start/1.txt /opt/task/start.txt
+   8 ls -a
+   9 cat .ash_history
+  10 cat .ash_history | tail -4 >> /opt/task/start.txt
+  11 cat /opt/task/start.txt
+  12 cat .fscmd
+  13 history > history.txt
